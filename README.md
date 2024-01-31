@@ -27,4 +27,5 @@
 
 
 5.http://znak/Goods/delete.php/6 - Удаление товара 
+
 6. http://znak/Categories/categori.php - Просмотр категорий 
