@@ -13,21 +13,6 @@ class Categories
         $this->conn = $db;
     }
 
-    public function readAll()
-    {
-        $query = "SELECT
-                id, name, uri
-            FROM
-                " . $this->table_name . "
-            ORDER BY
-                name";
-
-        $stmt = $this->conn->prepare($query);
-        $stmt->execute();
-
-        return $stmt;
-    }
-
     public function readAllWithCount()
     {
         $query = "SELECT
